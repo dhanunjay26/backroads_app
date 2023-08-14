@@ -1,0 +1,25 @@
+import React from "react";
+import logo from "../images/logo.svg";
+import PageLinks from "./PageLinks";
+import SocialLink from "./SocialLink";
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} className="nav-logo" alt="backroads" />
+          <button type="button" className="nav-toggle" id="nav-toggle">
+            <i className="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <PageLinks class1="nav-links" class2="nav-link" id="nav-links" />
+
+        <SocialLink class1="nav-icons" class2="nav-icon" />
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
